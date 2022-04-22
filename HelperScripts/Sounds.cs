@@ -10,6 +10,8 @@ public class Sounds
     public bool mute;
     public bool loop;
 
+    public AudioClip clip;
+
     [Range(0f,1f)]
     public float volume;
     [Range(-3f, 3f)]
@@ -38,6 +40,7 @@ public class Sounds
     public void GetRead(AudioSource AS)
     {
         source = AS;
+        source.clip = clip;
         source.mute = mute;
         source.loop = loop;
         source.pitch = pitch;

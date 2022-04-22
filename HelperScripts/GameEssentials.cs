@@ -15,21 +15,6 @@ public class GameEssentials : Singleton<GameEssentials>
     public static int retryVal = 0;
     public static int gameModeVal = 0;
 
-    void Awake()
-    {
-        if (!instance)
-        {
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            DestroyImmediate(this.gameObject);
-        }
-
-        Vibration.Init();
-        //sd.SetPlayerLevelType(6);
-    }
-
     void Start()
     {
         //GameObject.Find("EventSystem").SetActive(false);
@@ -40,6 +25,7 @@ public class GameEssentials : Singleton<GameEssentials>
         print(val);
     }
 
+   
    
 
 

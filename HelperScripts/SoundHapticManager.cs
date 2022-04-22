@@ -11,6 +11,7 @@ public class SoundHapticManager : MonoBehaviour
 
     private void Awake()
     {
+        Vibration.Init();
         SetupAudioSources();
     }
 
@@ -51,7 +52,7 @@ public class SoundHapticManager : MonoBehaviour
 
     public void Audio_On()
     {
-        for (int i = 0; i < sounds; i++)
+        for (int i = 0; i < sounds.Length; i++)
         {
             sounds[i].AudioSourceState(true);
         }
@@ -59,7 +60,7 @@ public class SoundHapticManager : MonoBehaviour
 
     public void Audio_Off()
     {
-        for (int i = 0; i < sounds; i++)
+        for (int i = 0; i < sounds.Length; i++)
         {
             sounds[i].AudioSourceState(false);
         }
