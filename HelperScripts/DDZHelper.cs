@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System;
 using System.Linq;
 
-public class DDZ
+public class Helper
 {
     public static void randomizeList(List<GameObject> AllObjects)
     {

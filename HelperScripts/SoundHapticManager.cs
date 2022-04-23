@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DDZ;
 
 public class SoundHapticManager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class SoundHapticManager : MonoBehaviour
     void Start()
     {
         gameEssentials = GameEssentials.instance;
+      
     }
 
     void SetupAudioSources()
